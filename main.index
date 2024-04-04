@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            width: 610px; /* Set a fixed width for the wrapper */
+            overflow-x: auto; /* Enable horizontal scrolling */
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+
+        .wrapper::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        .carousel {
+            display: flex;
+            gap: 2px;
+            min-width: fit-content; /* Allow the carousel to shrink to fit its contents */
+            width: calc(300px * 2 + 4px + 2px); /* Set the width to fit 2 items plus gap */
+        }
+
+        .item {
+            height: 300px;
+            width: 300px; /* Set the width of each item */
+            border: 1px solid blueviolet;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="carousel">
+            <div class="item first">1</div>
+            <div class="item second">2</div>
+            <div class="item third">3</div>
+            <div class="item forth">4</div>
+            <div class="item fifth">5</div>
+        </div>
+    </div>
+</body>
+</html>
